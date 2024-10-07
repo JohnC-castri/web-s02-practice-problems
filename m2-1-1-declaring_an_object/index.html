@@ -8,12 +8,14 @@
     PROBLEM 1: Create a new empty human object.
     */
     //ENTER YOUR CODE HERE
+    let human = {}
 
     /*
     PROBLEM 2: Create a hero object with firstName, lastName,
     and age properties using the values Bruce Wayne, 33.
     */
     //ENTER YOUR CODE HERE
+    let hero = { FirstName:"Bruce", LastName:"Wayne", age:33 }
 
     /*
     PROBLEM 3: Using the supplied object, log the cake's flavor property twice,
@@ -28,18 +30,23 @@
       flavor: "carrot"
     }
     //ENTER YOUR CODE HERE
+    console.log(cake.size)
 
     /*
     PROBLEM 4: Modify the existing cake object flavor to "chocolate" and
     log the result.
     */
     //ENTER YOUR CODE HERE
+    console.log("before flavor change")
+    console.log(cake.flavor)
+    cake.flavor = "chocolate"
+    console.log(cake.flavor)
 
     /*
     PROBLEM 5 (DEBUGGING): Why doesn't this log out the appropriate value?
     (uncomment line console log below)
     */
-    // console.log("The current flavor is currentFlavor")
+    console.log(`The current flavor is ${cake.flavor}`)
 
   </script>
 </body>
