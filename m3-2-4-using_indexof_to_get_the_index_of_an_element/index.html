@@ -4,31 +4,44 @@
 <body>
   <h1>Using IndexOf to Get the Index of an Element</h1>
   <script>
-    const fruits = ["apple", "banana", "cherry", "date", "elderberry"];
+    const fruits = ["apple", "banana", "cherry", "date", "elderberry", "strawberries"];
 
     /*
     PROBLEM 1:
     Find the index of "banana" in the array "fruits" and log it to the console.
     */
     // ENTER YOUR CODE HERE
+    console.log(fruits.indexOf('banana'))
 
     /*
     PROBLEM 2:
     Check if "fig" is in the array "fruits". If it is not present, log -1 to the console.
     */
     // ENTER YOUR CODE HERE
+    console.log(fruits.indexOf('fig'))
 
     /*
     PROBLEM 3:
     Find the index of "cherry" in the array "fruits" and use slice to log an array of elements after "cherry", including "cherry".
     */
     // ENTER YOUR CODE HERE
+    let cherr = fruits.indexOf('cherry')
+    let slicing = fruits.slice(cherr, 5)
+    console.log(slicing)
 
     /*
     PROBLEM 4:
     Using indexOf, find the first occurrence of "date" in the array "fruits" and log an array that excludes this element and all elements before it.
     */
     // ENTER YOUR CODE HERE
+    let idxDates = fruits.indexOf('date')
+    let starting = idxDates + 1
+    let emptarr = []
+    while (starting < 6) {
+      emptarr[emptarr.length] = fruits[starting] 
+      starting++
+    }
+    console.log(emptarr)
 
     /*
     PROBLEM 5 (DEBUGGING):

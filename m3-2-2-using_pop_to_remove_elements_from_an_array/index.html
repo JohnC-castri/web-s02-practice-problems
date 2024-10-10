@@ -10,8 +10,10 @@
     */
     const names = ["Alice", "Bob", "Charlie", "David"];
     //ENTER YOUR CODE HERE
+    let removedName = names.pop()
     console.log(names);
-    // console.log(removedName);
+    console.log(removedName);
+
 
     /*
     PROBLEM 2: Use the pop method to remove all elements from the numbers array.
@@ -19,6 +21,12 @@
     */
     const numbers = [1, 2, 3, 4, 5];
     //ENTER YOUR CODE HERE
+    let popped = ""
+    let i = 0
+    while (i < numbers.length) {
+      popped = numbers.pop()
+      console.log(popped)
+    }
 
     /*
     PROBLEM 3: Use the pop and shift methods to remove the first and last elements.
@@ -27,6 +35,14 @@
     */
     const animals = ["dog", "cat", "fish", "bird"];
     //ENTER YOUR CODE HERE
+    let firststored = animals.pop()
+    let laststored = animals.shift()
+    let arrgLandF = []
+    arrgLandF[arrgLandF.length] = firststored
+    arrgLandF[arrgLandF.length] = laststored
+    console.log(arrgLandF)
+    console.log(laststored, firststored)
+
 
     /*
     PROBLEM 4: You are given an array of numbers.
@@ -37,6 +53,10 @@
 
     function popLastTwo(arr) {
       //ENTER YOUR CODE HERE
+      const lastTwo = [];
+      lastTwo.push(arr.pop());
+      lastTwo.push(arr.pop());
+      return lastTwo
     }
 
     console.log(popLastTwo(nums)); // should log [6, 5]
@@ -47,15 +67,15 @@
     However, it is not working.  Please fix the code so that it works as expected.
     */
 
-    /*
+    
 
     const letters = ['a', 'b', 'c', 'd'];
 
-    const remainingLetters = letters.pop;
+    const remainingLetters = letters.pop();
 
     console.log(letters);
 
-    */
+    
 
   </script>
 </body>
